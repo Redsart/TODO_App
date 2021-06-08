@@ -13,10 +13,11 @@ namespace TodoApp.ConsoleApp.Framework
         /**
          * Name & description of the command. Shown to the user.
          */
+        System.Array[,] arrays;
         protected string Name { get; set; }
 
         /**
-         * If the given input matching the command?
+         * If the given input matching the command? 
          */
         protected Func<string, bool> Match { get; set; }
 

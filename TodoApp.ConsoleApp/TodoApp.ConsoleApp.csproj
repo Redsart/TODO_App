@@ -71,11 +71,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Back.cs" />
+    <Compile Include="Commands\Exit.cs" />
+    <Compile Include="Components\Input.cs" />
+    <Compile Include="Components\Output.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Props\Todo.cs" />
     <Compile Include="UI\TaskOperations.cs" />
     <Compile Include="UI\Messages.cs" />
     <Compile Include="UI\UserInput.cs" />
+    <Compile Include="ViewModels\Goodbye.cs" />
+    <Compile Include="ViewModels\Navigation.cs" />
+    <Compile Include="ViewModels\Todo.cs" />
+    <Compile Include="Views\Goodbye.cs" />
+    <Compile Include="Views\Home.cs" />
+    <Compile Include="Views\TodoDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -137,9 +148,13 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="_data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TodoApp.ConsoleApp.Framework\TodoApp.ConsoleApp.Framework.csproj">
+      <Project>{e549d0d6-dfc7-414c-8784-ad6f98ebd625}</Project>
+      <Name>TodoApp.ConsoleApp.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TodoApp.Repositories\TodoApp.Repositories.csproj">
       <Project>{519851b3-95c9-40e4-87d1-fb12529637e8}</Project>
       <Name>TodoApp.Repositories</Name>
